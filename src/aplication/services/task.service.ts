@@ -11,7 +11,7 @@ export class TaskService {
 
   async createTask(dto: CreateTaskDto): Promise<Task> {
     const task = new Task(
-      // Geração de ID, pode ser UUID
+      // Podia e devia ser UUID mas para ser mas pratico no teste utilizei Date
       new Date().toISOString(),
       dto.title,
       dto.description,

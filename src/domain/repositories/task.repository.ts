@@ -1,6 +1,7 @@
-// src/domain/repositories/task.repository.ts
 import { Task } from '../entities/task.entity';
 
+
+//As implementaçoes estao em infrastructure/repositories
 export interface TaskRepository {
   create(task: Task): Promise<Task>;
   findAll(): Promise<Task[]>;
